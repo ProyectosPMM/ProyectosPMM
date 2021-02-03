@@ -1103,3 +1103,36 @@ section {
     padding-right: 20px 15px;
   }
 }
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #4223Aa; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: center; 
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  body { 
+    padding: 0; 
+    margin: 0; 
+    width: 320px; }
+  }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body { 
+    width: 495px; 
+  }
+}
