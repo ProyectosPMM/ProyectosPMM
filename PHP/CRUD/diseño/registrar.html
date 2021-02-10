@@ -10,35 +10,36 @@
 
 <body>
 
-<nav>
-	<ul>
-		
-		<li><a href="index.html">Ingresar</a></li>
-		<li><a href="registrar.html">Registrar</a></li>
-		<li><a href="empleados.html">Empleados</a></li>
-		<li><a href="salir.html">Salir</a></li>
-
-	</ul>
-</nav>
+	<nav>
+		<ul>
+			
+			<li><a href="index.html">Ingresar</a></li>
+			<li><a href="registrar.html">Registrar</a></li>
+			<li><a href="libros.html">Libros</a></li>
+			<li><a href="salir.html">Salir</a></li>
+	
+		</ul>
+	</nav>
 
 <section>
 
 	<br>
-	<h1>REGISTRAR UN EMPLEADO</h1>
+	<h1>REGISTRAR LIBRO</h1>
 
 	<form method="post" action="">
 		
-		<input type="text" placeholder="Nombre" name="nombre" required>
+		<input type="text" placeholder="Título" name="title" required>
 
-		<input type="text" placeholder="Apellido" name="apellido" required>
+		<input type="text" placeholder="Autor" name="autor" required>
+		
+		<input type="number"  min="999" max="9999"  placeholder="Año de Publicación" name="yearpublish" required>
 
-		<input type="email" placeholder="Email" name="email" required>
+		<input type="number" min="1" placeholder="Número de Edición" name="numberedi" required>
 
-		<input type="text" placeholder="Puesto" name="puesto" required>
-
-		<input type="text" placeholder="Salario" name="salario" required>
-
-		<input type="submit" value="Registrar">
+		<input type="number"  min="999" max="9999"  placeholder="Año de Edición (Opcional)" name="yearedit" >
+		<input type="number" name="pagenumber" min="1" placeholder="Cantidad de Páginas (Opcional)">
+		<button type="submit">Registrar Libro</button>
+		
 
 	</form>
 

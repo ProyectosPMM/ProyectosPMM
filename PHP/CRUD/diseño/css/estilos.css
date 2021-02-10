@@ -8,8 +8,8 @@ nav{
 	margin:auto;
 	width:100%;
 	height:auto;
-	background:gray;
-}
+	background:#4223Aa;
+} 
 
 nav ul{
 	position:relative;
@@ -23,22 +23,33 @@ nav ul li{
 	width:24%;
 	line-height: 50px;
 	list-style: none;
+	
+}
+nav ul li:hover{
+	background-color: #734cF5;
+	
+	
 }
 
 nav ul li a{
 	color:white;
 	text-decoration: none;
 	font-size: 25px;
+	-webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease;
+	
 }
 
 nav ul li a:hover{
-	color:black;
+	font-size: 28px;
+
 }
 
 section{
 	position: relative;
 	margin: auto;
-	width:400px;
+	width:85%;
+	
 }
 
 section h1{
@@ -49,6 +60,7 @@ section h1{
 }
 
 section form{
+	align-items: center;
 	position:relative;
 	margin:auto;
 	width:400px;
@@ -68,21 +80,96 @@ section form input[type="submit"]{
 
 }
 
-table{
-	position:relative;
-	margin:auto;
-	width:100%;
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+}
+th { 
+	background: #4223Aa; 
+	color: white; 
+	font-weight: bold; 
+}
+td, th { 
+	padding: 6px; 
+	border: 1px solid #ccc; 
+	text-align: center; 
+}
+.buttonedit{
+	display: block;
+	background-color: #f0ec03;
+	width: 100%;
+	padding: 10px;
+	border: 0;
+	font-size: 15px; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+}
+.buttonedit:hover{
+	background-color: #bebc0d;
+}
+.buttonndelete{
+	display: block;
+	background-color: #f50808;
+	width: 100%;
+	padding: 10px;
+	border: 0;
+	font-size: 15px; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+}
+.buttonndelete:hover{
+	background-color: #af0c0c;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+form{
+	
+  padding: 60px;
+  max-width: 400px;
+  background-color:#7EF584;
+  margin: 0 auto;
 }
 
-table#t1{
-	left:-25%;
+form input, form textarea{
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  border: none; 
+  color: #525c66; 
+  font-size: 1em;
+  resize: horizontal; 
 }
 
-
-table thead tr th{
-	padding:10px;
+form button {
+	
+	display: block;
+	background-color: #0095eb;
+	width: 96%;
+	padding: 10px;
+	padding-left: 15px;
+	margin-left: 8px;
+	margin-top: 20px;
+	border: 0;
+	font-size: 1.2em; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
 }
-
-table tbody tr td{
-	padding:10px;
+form button:hover{
+	background-color: #046193;
 }
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; }
+		}
